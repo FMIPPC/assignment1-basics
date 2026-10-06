@@ -1,17 +1,24 @@
-# Assignment 1 (basics): Building a Transformer LM
+# FMI PPC Laboratory 1 (basics): Building a Transformer LM
 
-For a full description of the assignment, see the assignment handout at
+University of Bucharest, Faculty of Mathematics and Computer Science.
+
+Use the handouts for local experiments and discussion; keep code, measurements, and explanations as lab notes. No homework upload is required.
+
+Start with small inputs and the low-resource guidance. Large-model, CUDA/Triton, and multi-GPU experiments are optional and require suitable hardware. No private course service is required.
+
+For optional larger experiments, consult the [University of Bucharest Advanced Computing Center user guide](https://unibuc-dtd.github.io/advanced-computing-center-user-guide/). Center access is optional.
+
+See the handout:
 [assignment1_basics.pdf](./assignment1_basics.pdf)
 
-If you see any issues with the assignment handout or code, please feel free to
-raise a GitHub issue or open a pull request with a fix.
+Report issues or suggest corrections through GitHub.
 
 ## Setup
 
 ### Environment
-We manage our environments with `uv` to ensure reproducibility, portability, and ease of use.
+Use `uv` to manage the environment.
 Install `uv` [here](https://github.com/astral-sh/uv#installation) (recommended), or run `pip install uv`/`brew install uv`.
-We recommend reading a bit about managing projects in `uv` [here](https://docs.astral.sh/uv/guides/projects/#managing-dependencies) (you will not regret it!).
+For dependency management, see the [uv project guide](https://docs.astral.sh/uv/guides/projects/#managing-dependencies).
 
 You can now run any code in the repo using
 ```sh
@@ -21,12 +28,11 @@ and the environment will be automatically solved and activated when necessary.
 
 ### Run unit tests
 
-
 ```sh
 uv run pytest
 ```
 
-Initially, all tests should fail with `NotImplementedError`s.
+Tests for unimplemented components will fail until the adapters are connected.
 To connect your implementation to the tests, complete the
 functions in [./tests/adapters.py](./tests/adapters.py).
 
@@ -47,3 +53,7 @@ gunzip owt_valid.txt.gz
 
 cd ..
 ```
+
+## Source attribution
+
+Adapted from [Stanford CS336 assignment1-basics](https://github.com/stanford-cs336/assignment1-basics). Original copyright and permission notices remain in [LICENSE](LICENSE). Original handouts remain in Git history; technical package and dataset identifiers retain their original names.

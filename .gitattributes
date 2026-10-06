@@ -1,0 +1,3 @@
+
+# PDFs must not undergo text or newline conversion.
+*.pdf binary
