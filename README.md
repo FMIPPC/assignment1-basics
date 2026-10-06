@@ -37,7 +37,7 @@ To connect your implementation to the tests, complete the
 functions in [./tests/adapters.py](./tests/adapters.py).
 
 ### Download data
-Download the TinyStories data and a subsample of OpenWebText
+Download the TinyStories (+alternative for slow internet: SimpleStories) data and a subsample of OpenWebText
 
 ``` sh
 mkdir -p data
